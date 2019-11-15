@@ -12,7 +12,7 @@
     display:inline-block;
     float:right;
     height:1em;
-    width:30%;
+    width:30% !important;
     text-align:center; 
     margin:1em 0;
     position: static; 
@@ -137,7 +137,7 @@
     display:inline-block;
     float:right;
     height:1em;
-    width:30%;
+    width:30% !important;
     text-align:center; 
     margin:1em 0;
     position: static; 
