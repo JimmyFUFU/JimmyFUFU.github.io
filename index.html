@@ -7,20 +7,24 @@
   
   <nav id="top">
     <p>Website Title / Logo</p>
-    <ul id="mother">
-      <li><img src="8dp.png" id="menu">
-        <ul id="child">
-          <li><a href="#">Item1</a></li>
-          <li><a href="#">Item2</a></li>
-          <li><a href="#">Item3</a></li>
-          <li><a href="#">Item4</a></li>
-        </ul>
-      </li>
-    </ul>
+    
+    <div id="three">
+      <img src="8dp.png" id="menunew" onclick="openNav()">
+    </div>
+    
+    <div id="myside" class="side">
+      <a href="javascript:void(0)" class="closebtn" onclick = "closeNav()">&times;</a>
+      <a href="#">Item1</a>
+      <a href="#">Item2</a>
+      <a href="#">Item3</a>
+      <a href="#">Item4</a>
+    </div>
+    
+    
   </nav>
   
   <header id="welcome">
-    <h2>Welcome Message</h2>
+    <h2 id="welcometext">Welcome Message</h2>
   </header>
   
   <section class="section1">
@@ -43,5 +47,20 @@
 
   
   <div ID="call" >Call to Action</div>
+  
+  <div id="boxhide">
+    <div class="box12" >
+      <div class="box" id="DIV5">Content Box5</div>
+      <div class="box" id="DIV6">Content Box6</div>
+      <div style="clear:both;"></div>
+    </div>
+    
+    <div class="box12" >
+      <div class="box" id="DIV7">Content Box7</div>
+      <div class="box" id="DIV8">Content Box8</div>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+  <script src="week2.js"></script>
   
 </html>
