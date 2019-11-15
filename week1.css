@@ -1,38 +1,48 @@
 @media screen and (min-width:1200px){
    #top  {
-    background:whitesmoke;
+    background:#FFD954;
   }
   
   #top p{
     display:inline-block;
     
   }
-  #top ul{
+  
+  .side {
     display:inline-block;
     float:right;
-    text-decoration:none;
-    
-  }
-  #top ul li {
-    list-style:none;
-    display:inline;
-    margin:30px;
-    text-decoration:none;
+    height:1em;
+    width:30%;
+    text-align:center; 
+    margin:1em 0;
+    position: static; 
   }
   
-  #top ul li a{
+  .side a {
+    margin-left:7%;
     text-decoration:none;
+    color:#69491A
   }
   
-  #menu{
-    display:none;
+  .side a:hover{
+    color:tomato;
+  }
+  
+  .closebtn{
+     display:none;
+  }
+  
+  
+  #three{
+    display:none; 
   }
   
   
   #welcome{
-    background:lavender;
+    background:#E4B660;
     text-align:center;
     font-weight:bold;
+    color:#FFE4B5;
     padding-top:3em;
     padding-bottom:3em;
     }
@@ -45,11 +55,10 @@
 
   
   .box{
-    background:slategray;
+    background:#69491A;
     text-align:center;
     width:585px;
     height:150px;
-    margin-bottom:30px;
     padding-top:0.8em;
     float:left;
     
@@ -62,65 +71,102 @@
 
   
   #DIV1{
-      margin-right:30px;
+    margin-right:30px;
+    margin-bottom:30px;
   }
   
   #DIV2{
-      
+    margin-bottom:30px;  
   }
   
   #DIV3{
-      margin-right:30px;
+    margin-right:30px;
+    
   }
   
   #DIV4{
 
   }
   
+  #boxhide{
+    display:none;
+    
+  }
+  
+  #DIV5{
+    margin-right:30px;
+    margin-bottom:30px;
+  }
+  
+  #DIV6{
+    margin-bottom:30px;  
+  }
+  
+  #DIV7{
+    margin-right:30px;
+    
+  }
+  
+  #DIV8{
+
+  }
+  
   #call{
-    background:lavender;
+    background:#F2AB39;
+    color:#FFE4B5;
     padding:1.5em;
     text-align:center;
     width:100px;
-    margin:0px auto;
+    margin:30px auto;
   }
   
 }
 
-@media screen and (min-width:800px) and (max-width: 1200px){
+@media screen and (min-width:801px) and (max-width: 1199px){
   
-     #top  {
-    background:whitesmoke;
+  #top  {
+    background:#FFD954;
   }
   
   #top p{
     display:inline-block;
     
   }
-  #top ul{
+  
+  .side {
     display:inline-block;
     float:right;
-    
-  }
-  #top ul li {
-    list-style:none;
-    display:inline;
-    margin:30px;
+    height:1em;
+    width:30%;
+    text-align:center; 
+    margin:1em 0;
+    position: static; 
   }
   
-  #top ul li a{
+  .side a {
+    margin-left:7%;
     text-decoration:none;
+    color:#69491A
   }
   
-  #menu{
-    display:none;
-   
+  .side a:hover{
+    color:tomato;
+  }
+  
+  .closebtn{
+     display:none;
+  }
+  
+  
+  #three{
+    display:none; 
   }
   
   #welcome{
-    background:lavender;
+    background:#E4B660;
     text-align:center;
     font-weight:bold;
+    color:#FFE4B5;
     padding-top:3em;
     padding-bottom:3em;
     }
@@ -133,11 +179,10 @@
 
   
   .box{
-    background:slategray;
+    background:#69491A;
     text-align:center;
     width:47%;
     height:150px;
-    margin-bottom:2.5%;
     padding-top:0.8em;
     float:left;
   }
@@ -150,10 +195,11 @@
   
   #DIV1{
       margin-right:2.5%;
+    margin-bottom:2.5%;
   }
   
   #DIV2{
-      
+    margin-bottom:2.5%;
   }
   
   #DIV3{
@@ -164,85 +210,98 @@
 
   }
   
+  #boxhide{
+    display:none;
+  }
+  
+  #DIV5{
+    margin-right:2.5%;
+    margin-bottom:2.5%;
+  }
+  
+  #DIV6{
+    margin-bottom:2.5%;  
+  }
+  
+  #DIV7{
+    margin-right:2.5%;
+    
+  }
+  
+  #DIV8{
+
+  }
+  
   #call{
-    background:lavender;
+    background:#F2AB39;
+    color:#FFE4B5;
     padding:1.5em;
     text-align:center;
     width:100px;
-    margin:0 auto;
+    margin:2.5% auto;
   }
 }
 
-@media screen and (min-width:500px) and (max-width: 800px){
+@media screen and (min-width:501px) and (max-width: 800px){
   
    #top  {
-    background:whitesmoke;
+    background:#FFD954;
   }
   
   #top p{
     display:inline-block;
   }
   
-  #mother{
+  #three{
     display:inline-block;
-    height:30px;
     float:right;
-    list-style:none;
-    padding-left:0;
-    margin-right:5%;
-    overflow:auto;
-  }
-  
-  #menu{
-    display:block;
-    float:left;
     height:30px;
     text-align:center; 
-    margin:0 auto;
-    padding-left:9px;
+    margin:10px 3%;
+  }
+  
+  .side{
+    height:100%;
+    width:0px;
+    position:fixed;
+    z-index:1;
+    top:0;
+    right:0;
+    background-color:#F2AB39;
+    overflow-x:hidden;
+    transition:0.5s;
+    padding-top:60px;
+    white-space:nowrap;
+  }
+  
+  .side a{
+    padding:8px 8px 8px 32px;
     text-decoration:none;
-  }
-  
-  #menu:hover{
-    color: #000000;
-  }
- 
-  
-  #mother li:hover > ul{
+    font-size:2em;
+    color:#FFDEAD;
     display:block;
- 
+    transition:0.3s;
   }
   
-  #child{
+  .side a:hover {
+    color:#f1f1f1;
+  }
+  
+  .side .closebtn{
     position:absolute;
-    width:50px;
-    overflow:visible;
-    clear:left;
-    margin:34px 0 0 0;
-    list-style:none;
-    padding-left:0px;
-    background-color:whitesmoke;
-    display:none;
+    top:0;
+    right:25px;
+    font-size:36px;
+    margin-left:50px;
+    overflow:hidden;
   }
-  
-  #child li{
-    float:none;
-    text-align:center;
-    margin-bottom:10px;
-  }
-  
-  #child li a {
-    float:none;
-	  width: 100%;
-    text-decoration:none;
-  }
-  
   
   
   #welcome{
-    background:lavender;
+    background:#E4B660;
     text-align:center;
     font-weight:bold;
+    color:#FFE4B5;
     padding-top:3em;
     padding-bottom:3em;
     }
@@ -255,11 +314,10 @@
 
   
   .box{
-    background:slategray;
+    background:#69491A;
     text-align:center;
     width:47%;
     height:150px;
-    margin-bottom:2.5%;
     padding-top:0.8em;
     float:left;
   }
@@ -271,10 +329,11 @@
   
   #DIV1{
       margin-right:2.5%;
+    margin-bottom:2.5%;
   }
   
   #DIV2{
-      
+      margin-bottom:2.5%;
   }
   
   #DIV3{
@@ -285,83 +344,97 @@
       
   }
   
+   #boxhide{
+    display:none;
+  }
+  
+  #DIV5{
+    margin-right:2.5%;
+    margin-bottom:2.5%;
+  }
+  
+  #DIV6{
+    margin-bottom:2.5%;  
+  }
+  
+  #DIV7{
+    margin-right:2.5%;
+    
+  }
+  
+  #DIV8{
+
+  }
+  
   #call{
-    background:lavender;
+    background:#F2AB39;
+    color:#FFE4B5;
     padding:1.5em;
     text-align:center;
     width:100px;
-    margin:0 auto;
+    margin:2.5% auto;
   }
 }
 
 @media screen and (max-width:500px){
   
     #top  {
-    background:whitesmoke;
+    background:#FFD954;
   }
   
   #top p{
     display:inline-block;
   }
   
-  #mother{
+  #three{
     display:inline-block;
-    height:30px;
     float:right;
-    list-style:none;
-    padding-left:0;
-    margin-right:5%;
-    overflow:auto;
-  }
-  
-  #menu{
-    display:block;
-    float:left;
     height:30px;
     text-align:center; 
-    margin:0 auto;
-    padding-left:9px;
+    margin:10px 3%;
+  }
+  
+  .side{
+    height:100%;
+    width:0px;
+    position:fixed;
+    z-index:1;
+    top:0;
+    right:0;
+    background-color:#F2AB39;
+    overflow-x:hidden;
+    transition:0.5s;
+    padding-top:60px;
+    white-space:nowrap;
+  }
+  
+  .side a{
+    padding:8px 8px 8px 32px;
     text-decoration:none;
-  }
-  
-  #menu:hover{
-    color: #000000;
-  }
- 
-  
-  #mother li:hover > ul{
+    font-size:2em;
+    color:#FFDEAD;
     display:block;
- 
+    transition:0.3s;
   }
   
-  #child{
+  .side a:hover {
+    color:#f1f1f1;
+  }
+  
+  .side .closebtn{
     position:absolute;
-    width:50px;
-    overflow:visible;
-    clear:left;
-    margin:34px 0 0 0;
-    list-style:none;
-    padding-left:0px;
-    background-color:whitesmoke;
-    display:none;
-  }
-  
-  #child li{
-    float:none;
-    text-align:center;
-    margin-bottom:10px;
-  }
-  
-  #child li a {
-    float:none;
-	  width: 100%;
-    text-decoration:none;
+    top:0;
+    right:25px;
+    font-size:36px;
+    margin-left:50px;
+    overflow:hidden;
   }
   
   #welcome{
-    background:lavender;
+    background:#E4B660;
     text-align:center;
     font-weight:bold;
+    color:#FFE4B5;
     padding-top:3em;
     padding-bottom:3em;
     }
@@ -374,37 +447,37 @@
 
   
   .box{
-    background:slategray;
+    background:#69491A;
     text-align:center;
     width:99%;
     height:150px;
-    margin:0 auto 2.5% auto;
+    margin:2.5% auto 0 auto;
     padding-top:0.8em;
   }
   
 
   
-  #DIV1{
-      
+  #DIV1{ 
+    margin-top:0px;
   }
   
-  #DIV2{
-      
+   #boxhide{
+    display:none;
   }
   
-  #DIV3{
+  #DIV5{
+    margin-top:0px;
   }
   
-  #DIV4{
-      
-  }
+
   
   #call{
-    background:lavender;
+    background:#F2AB39;
+    color:#FFE4B5;
     padding:1.5em;
     text-align:center;
     width:100px;
-    margin:0 auto;
+    margin:2.5% auto;
   }
 }
 
